@@ -10,7 +10,7 @@ dotenv.config({path: "./config/config.env"});
 
 app.use(cors({
     // origin: [process.env.FRONTEND_URL],
-    origin: [`process.env.https://curious-truffle-8eed98.netlify.app/`],
+    origin: [`process.env.https://curious-truffle-8eed98.netlify.app/`] || 10000,
     methods: ["POST"],
     credentials:true 
 }));
