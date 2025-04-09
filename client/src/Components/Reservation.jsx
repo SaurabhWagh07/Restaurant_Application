@@ -19,7 +19,7 @@ const Reservation = () => {
     try {
       const { data } = await axios.post(
         // "http://localhost:4345/api/v1/reservation/send",
-         "https://restaurant-application-pzse.onrender.com/api/v1/reservation/send",
+         `https://restaurant-application-pzse.onrender.com/api/v1/reservation/send`,
         { firstName, lastName, email, phone, date, time },
         {
           headers: {
